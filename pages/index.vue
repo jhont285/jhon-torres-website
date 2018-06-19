@@ -4,8 +4,8 @@
       <div class="jumbotron parallax parallax-home">
         <div class="container">
           <div class="text-right">
-            <h1 class="display-4">Welcome friend!</h1>
-            <p class="lead">My name is Jhon</p>
+            <h1 class="display-4 text-light">Welcome friend!</h1>
+            <p class="lead text-light">My name is Jhon</p>
           </div>
         </div>
       </div>
@@ -16,18 +16,16 @@
         <div class="row">
           <div class="col-md-4">
 
-            <img src="~/assets/img/cardPhotography.jpg" class="img-fluid rounded-circle" alt="my photography">
-            <div class="text-justify text-motivation">
-              <p>
-                <i class="fa fa-terminal fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-                Hi! In this website you can see my profile professional.
-                My biggest passion now is to program because I can build
-                things awesome. I like learning new technologies because
-                these have interesting things. Lately, I am interested in
-                the competitive programming, as it is a way to learn and
-                have fun.
-              </p>
-            </div>
+            <img src="~assets/img/cardPhotography.jpg" class="img-fluid rounded-circle" alt="my photography">
+            <p class="text-justify my-4">
+              <i class="fa fa-terminal fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+              Hi! In this website you can see my profile professional.
+              My biggest passion now is to program because I can build
+              things awesome. I like learning new technologies because
+              these have interesting things. Lately, I am interested in
+              the competitive programming, as it is a way to learn and
+              have fun.
+            </p>
             <hr />
 
             <h2 class="text-center">
@@ -119,7 +117,7 @@
             </div>
             <br />
             <div class="text-center">
-              <a href="/docs/cv.pdf" class="btn btn-danger btn-lg" target="_blank" role="button">Download CV</a>
+              <a href="/jhon-torres-website/docs/cv.pdf" class="btn btn-danger btn-lg" target="_blank" role="button">Download CV</a>
             </div>
 
             <hr />
@@ -128,33 +126,33 @@
               Technologies <i class="fa fa-desktop" aria-hidden="true"></i>
             </h2>
 
-            <div class="card border-primary mb-3">
+            <div class="card border-dark my-3">
               <div class="card-header">Good Level</div>
               <div class="card-body">
-                <ul class="list-inline">
-                  <li type="button" class="btn btn-outline-primary list-inline-item btn-sm" v-for="tec in tecGood" :key="tec.id" data-toggle="tooltip" data-placement="top" :title="tec.split('-').slice(1).join(' ')">
+                <ul class="list-inline text-center">
+                  <li class="btn btn-outline-dark list-inline-item btn-sm m-1" v-for="tec in tecGood" :key="tec.id" data-toggle="tooltip" data-placement="top" :title="tec.split('-').slice(1).join(' ')">
                     <i :class="tec" class="fa-2x" ></i>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div class="card border-info mb-3">
+            <div class="card border-dark mb-3">
               <div class="card-header">Intermediate Level</div>
               <div class="card-body">
-                <ul class="list-inline">
-                  <li type="button" class="btn btn-outline-info list-inline-item btn-sm" v-for="tec in tecIntermediate" :key="tec.id" data-toggle="tooltip" data-placement="top" :title="tec.split('-').slice(1).join(' ')">
+                <ul class="list-inline text-center">
+                  <li class="btn btn-outline-dark list-inline-item btn-sm m-1" v-for="tec in tecIntermediate" :key="tec.id" data-toggle="tooltip" data-placement="top" :title="tec.split('-').slice(1).join(' ')">
                     <i :class="tec" class="fa-2x" ></i>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div class="card border-secondary mb-3">
+            <div class="card border-dark mb-3">
               <div class="card-header">Learning</div>
               <div class="card-body">
-                <ul class="list-inline">
-                  <li type="button" class="btn btn-outline-secondary list-inline-item btn-sm"  v-for="tec in tecLearning" :key="tec.id" data-toggle="tooltip" data-placement="top" :title="tec.split('-').slice(1).join(' ')">
+                <ul class="list-inline text-center">
+                  <li class="btn btn-outline-dark list-inline-item btn-sm m-1"  v-for="tec in tecLearning" :key="tec.id" data-toggle="tooltip" data-placement="top" :title="tec.split('-').slice(1).join(' ')">
                     <i :class="tec" class="fa-2x" ></i>
                   </li>
                 </ul>
@@ -193,7 +191,7 @@
                 <div class="col-9">
                   <ul>
                     <li>Servicio Nacional de Aprendizaje (SENA)</li>
-                    <li><strong>Degree:</strong> System Technique</li>
+                    <li><span class="font-weight-bold">Degree:</span> System Technique</li>
                   </ul>
                 </div>
               </div>
@@ -210,9 +208,9 @@
                 <div class="col-9">
                   <ul>
                     <li>National University of Colombia</li>
-                    <li><strong>Undegree:</strong> System and Computing Engineering</li>
+                    <li><span class="font-weight-bold">Undegree:</span> System and Computing Engineering</li>
                   </ul>
-                  <p class="lead text-warning">In progress <strong>80%</strong></p>
+                  <p class="lead text-warning">In progress: <span class="font-weight-bold">80%</span></p>
                 </div>
               </div>
             </div>
@@ -232,7 +230,7 @@
                   <ul>
                     <li>Indra Colombia LTDA</li>
                     <li>System Technique</li>
-                    <li><strong>Duration:</strong> 3 months</li>
+                    <li><span class="font-weight-bold">Duration:</span> 3 months</li>
                   </ul>
                 </div>
               </div>
@@ -246,7 +244,7 @@
                   <ul>
                     <li>National University of Colombia</li>
                     <li>Computer Monitor</li>
-                    <li><strong>Duration:</strong> 5 months</li>
+                    <li><span class="font-weight-bold">Duration:</span> 5 months</li>
                   </ul>
                 </div>
               </div>
@@ -258,7 +256,7 @@
               <h2 class="text-center">
                 My Time Lime <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
               </h2>
-              <div class="text-center ">
+              <div class="d-flex justify-content-center m-4">
                 <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">See timeline</button>
               </div>
               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -317,7 +315,7 @@
                               <h4 class="timeline-title">June 2011</h4>
                             </div>
                             <div class="timeline-body">
-                              <p>Practice SENA. <strong>Duration 3 months</strong></p>
+                              <div>Practice SENA. <p class="font-weight-bold">Duration 3 months</p></div>
                             </div>
                           </div>
                         </li>
@@ -366,8 +364,9 @@
                               <p>
                                 I worked as a computer monitor in the subject:
                                 &quot;Jose Celestino Mutis&quot;.
-                                <strong>Duration 5 months</strong>
                               </p>
+                              <p class="font-weight-bold">Duration 5 months</p>
+
                             </div>
                           </div>
                         </li>
@@ -387,218 +386,6 @@
 </template>
 
 <script>
-  import tecGood from '~/static/technologies/Good.json';
-  import tecIntermediate from '~/static/technologies/Intermediate.json';
-  import tecLearning from '~/static/technologies/Learning.json';
-  import $ from 'jquery';
-
-  export default {
-    data() {
-      return { tecGood, tecIntermediate, tecLearning }
-    },
-    mounted () {
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    },
-    layout: 'home',
-  };
+  import Index from './_lang/index';
+  export default Index;
 </script>
-
-
-<style scoped>
-.parallax-home {
-  background-image: url('~/assets/img/backgroidJumboTron.jpg');
-  height: 80vh;
-  color: white;
-}
-
-.text-motivation {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-/* scss to time line */
-.timeline-background {
-  background-image: url("~assets/img/backgroundTimeLine.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
-}
-
-.timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 3px;
-  background-color: #eeeeee;
-  left: 50%;
-  margin-left: -1.5px;
-}
-
-.timeline>li {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.timeline>li:before, .timeline>li:after {
-  content: " ";
-  display: table;
-}
-
-.timeline>li:after {
-  clear: both;
-}
-
-.timeline>li:before, .timeline>li:after {
-  content: " ";
-  display: table;
-}
-
-.timeline>li:after {
-  clear: both;
-}
-
-.timeline>li>.timeline-panel {
-  width: 46%;
-  float: left;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  background-color: white;
-}
-
-.timeline>li>.timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-
-.timeline>li>.timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-
-.timeline>li>.timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.6rem;
-  text-align: center;
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  margin-left: -25px;
-  background-color: #999999;
-  z-index: 100;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel {
-  float: right;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-
-.timeline-badge.primary {
-  background-color: #2e6da4 !important;
-}
-
-.timeline-badge.success {
-  background-color: #3f903f !important;
-}
-
-.timeline-badge.warning {
-  background-color: #f0ad4e !important;
-}
-
-.timeline-badge.danger {
-  background-color: #d9534f !important;
-}
-
-.timeline-badge.info {
-  background-color: #5bc0de !important;
-}
-
-.timeline-title {
-  margin-top: 0;
-  color: inherit;
-}
-
-.timeline-body>p, .timeline-body>ul {
-  margin-bottom: 0;
-}
-
-.timeline-body>p+p {
-  margin-top: 5px;
-}
-
-@media (max-width: 767px) {
-  ul.timeline:before {
-    left: 40px;
-  }
-  ul.timeline>li>.timeline-panel {
-    width: calc(100% - 90px);
-    width: -moz-calc(100% - 90px);
-    width: -webkit-calc(100% - 90px);
-  }
-  ul.timeline>li>.timeline-badge {
-    left: 15px;
-    margin-left: 0;
-    top: 16px;
-  }
-  ul.timeline>li>.timeline-panel {
-    float: right;
-  }
-  ul.timeline>li>.timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-  ul.timeline>li>.timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-}
-</style>

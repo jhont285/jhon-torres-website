@@ -1,0 +1,233 @@
+{
+  "home": {
+    "home": "Home",
+    "projects": "Projects",
+    "haveFun": "Have fun",
+    "contact": "Contact",
+    "copyright": "Copyright &copy; My Personal WebSite",
+    "write": "Write me",
+    "friend": "I {icon} new friends!"
+  },
+  "root": {
+    "header": {
+      "title": "Welcome friend!",
+      "subtitle": "My name is Jhon"
+    },
+    "introduction": {
+      "textMotivation": "Hi! In this website you can see my profile professional. My biggest passion now is to program because I can build things awesome. I like learning new technologies because these have interesting things. Lately, I am interested in the competitive programming, as it is a way to learn and have fun."
+    },
+    "languages": {
+      "languague": "Language | Languages",
+      "level": "Level",
+      "spanish": "Spanish",
+      "native": "Native",
+      "english": "English"
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "guitar": "Play Guitar",
+      "bicycle": "Ride Cycling"
+    },
+    "timeLine": {
+      "title": "My Time Lime",
+      "seeTimeline": "See timeline",
+      "work1": {
+        "date": "December 2009",
+        "text": "I graduated from school Alberto Lleras Camargo"
+      },
+      "work2": {
+        "date": "March 2010",
+        "text": "I went to study at the SENA: \"System Technique\""
+      },
+      "work3": {
+        "date": "April 2011",
+        "text": "I graduated from SENA like \"System Technique\""
+      },
+      "work4": {
+        "date": "June 2011",
+        "text": {
+          "info": "Practice SENA.",
+          "month": "Duration 3 months"
+        }
+      },
+      "work5": {
+        "date": "June 2012",
+        "text": "I went to study at the Institude \"Escala\""
+      },
+      "work6": {
+        "date": "February 2013",
+        "text": "I went to study at the National University of Colombia at Bogotá: \"System and Computing Engineering\"."
+      },
+      "work7": {
+        "date": "August 2016",
+        "text": [
+          "I worked as a computer monitor in the subject: \"Jose Celestino Mutis\".",
+          "Duration 5 months"
+        ]
+      }
+    },
+    "aboutMe": {
+      "title": "About me",
+      "age": "I am {age} years old",
+      "occupation": "I am currently studying System and Computing Engineering",
+      "download": "Download CV"
+    },
+    "technologies": {
+      "title": "Technologies",
+      "levels": [ "Good Level", "Intermediate Level", "Learning" ]
+    },
+    "education": {
+      "title": "My education",
+      "school": "School",
+      "institute": {
+        "title": "Technical Institute",
+        "degree": "Degree",
+        "nameDegree": "System Technique"
+      },
+      "university": {
+        "title": "University",
+        "undegree": "Undegree",
+        "nameUndegree": "System and Computing Engineering",
+        "progress": "Progress"
+      }
+    },
+    "experience": {
+      "title": "My experience",
+      "institute": {
+        "name": "Practice SENA",
+        "position": "System Technique",
+        "duration": "Duration",
+        "time": "3 months"
+      },
+      "university": {
+        "name": "My University",
+        "position": "Computer Monitor",
+        "duration": "Duration",
+        "time": "5 months"
+      }
+    }
+  },
+  "projects": {
+    "see": "I want to see it",
+    "header": {
+      "title": "My projects"
+    },
+    "game": {
+      "driver": {
+        "title": "Game \"Drunk driver\"",
+        "tags": {
+          "oop": "OOP",
+          "ip": "Imperative Programming"
+        },
+        "description": {
+          "paragraph": [
+            "The game was developed for the subject \"Object Oriented Programming\" taught by teacher \"Jorge Enrique Amaya Cala\" in the University National of Colombia.",
+            {
+              "introduction": "The Game has 4 versions",
+              "items": [
+                "Version en C: it's used utilizando Imperative programming. Interface was made in console.",
+                "Version en JavaScript: it's used \"Object Oriented Programming for prototype\". Interface was made in console.",
+                "Version en C++: it's used \"Object Oriented Programming\". Interface was made with the library SFML",
+                "Version en Java: it's used \"Object Oriented Programming\". Interface was made with the library JSFML"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "numericalMethods": {
+      "title": "Numerical Methods",
+      "tags": {
+        "integralCalculus": "Integral Calculus",
+        "diferentialCalculus": "Diferential Calculus",
+        "linearAlgebra": "Linear Algebra"
+      },
+      "paragraph": [
+        "In this project is all the material and implementations of the main numerical methods proposed by Professor Edwin Camilo Cubides of the National University of Colombia.",
+        "The programming lenguage used is \"SCILAB\", as this is recommended for the applications with math."
+      ]
+    },
+    "translator": {
+      "title": "Translator of the programming language \"Clojure\" to \"Python\"",
+      "paragraph": [
+        "This project was developed for the subject \"programming languages\" taught by teacher \"Felipe Restrepo Calle\" in the University National of Colombia.",
+        "The project aims to demonstrate that languages that make excessive use of parenthesis are impractical and difficult to read. Several algorithms are compared to visualize the big difference.",
+        "In the future it can serve as a source code migration tool"
+      ]
+    },
+    "dataStructures": {
+      "title": "Implementation of Data Structures and Important Algorithms",
+      "tags": {
+        "dataStructure": "Data Structure",
+        "graphs": "Graphs",
+        "order": "Ordering"
+      },
+      "paragraph": [
+        "In this project are the majority of Data Structures and algorithms ordering and graphs",
+        "Also it is all the material of the teacher \"Yoan José Pinzón Ardila\" of the National University of colombia."
+      ]
+    }
+  },
+  "haveFun": {
+    "header": {
+      "title": "Have fun",
+      "subtitle": "with game \"Code puzzle\""
+    },
+    "instructions": {
+      "title": "Instructions",
+      "paragraph": [
+        "You have to choose a number from 1 to 10 and Go, that is the number of digits of your number that you want to guess.",
+        "After, You must write your number and then click on the buttom \"Submit\"",
+        "The numbers will not have leading zeros except the number zero.",
+        "You have only a number of attempts shown above."
+      ],
+      "digits": {
+        "text": "In the bottom, Your number will appear in the left and for each number will appear with the next meaning",
+        "up": "The digit is bigger",
+        "down": "The digit is smaller",
+        "check": "This is a digit"
+      }
+    },
+    "areaGame": {
+      "title": "Code puzzle",
+      "notBegin": "Please select number length",
+      "begin": "You have {attempts} attempts",
+      "go": "Go",
+      "submit": "Submit",
+      "success": {
+        "title": "You win!",
+        "text": "The secret number is {secretNumber}"
+      },
+      "errorLost": {
+        "title": "You lost!",
+        "text": "The secret number is {secretNumber}"
+      },
+      "errorType": {
+        "title": "Oh no",
+        "text": "Please, write a number correct"
+      }
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Contact Me",
+      "subtitle": "Have questions? I have answers (maybe)."
+    },
+    "form": {
+      "paragraph": "Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!",
+      "names": "Names",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Message",
+      "send": "Send",
+      "success": {
+        "title": "Congratulation!",
+        "text": "Email sent successful"
+      },
+      "error": {
+        "title": "Error",
+        "text": "Please see the errors and try again"
+      }
+    }
+  }
+}

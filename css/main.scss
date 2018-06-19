@@ -1,13 +1,41 @@
+// example override bootswatch variables
+// $primary:       #FFCF06;
+// $secondary:     #37474f;
+// $success:       #28b62c;
+// $info:          #03a9f4;
+// $warning:       #FF7518;
+// $danger:        #ff4136;
+// $light:         #eeeeee;
+// $dark:          #444444;
+// end example override
+
+// import scss file
+@import "~bootswatch/dist/cosmo/variables";
+@import "~bootstrap/scss/bootstrap";
+// @import "~bootswatch/dist/cosmo/bootswatch";
+
+body {
+  font-size: 14px;
+  padding-top: 50px;
+}
+
 .parallax {
-  background-size: cover;
-  background-attachment: fixed;
+  background: {
+    size: cover;
+    attachment: fixed;
+  }
 }
 
 main {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: {
+    top: 2rem;
+    bottom: 2rem;
+  }
 }
 
-body {
-  padding-top: 50px;
+.page-enter-active, .page-leave-active {
+  transition: opacity .4s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
 }

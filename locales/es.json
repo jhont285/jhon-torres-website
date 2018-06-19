@@ -1,0 +1,233 @@
+{
+  "home": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "haveFun": "Diviértete",
+    "contact": "Contacto",
+    "copyright": "Copyright &copy; Mi sitio web personal",
+    "write": "Escríbeme",
+    "friend": "Yo {icon} tener nuevos amigos!"
+  },
+  "root": {
+    "header": {
+      "title": "Bienvenido!",
+      "subtitle": "Hola, mi nombre es Jhon"
+    },
+    "introduction": {
+      "textMotivation": "¡Hola! En este sitio web puedes ver mi perfil profesional. Mi mayor pasión ahora es programar porque puedo construir cosas increíbles. Me gusta aprender nuevas tecnologías porque tienen cosas interesantes. Últimamente, estoy interesado en la programación competitiva, ya que es una forma de aprender y divertirse."
+    },
+    "languages": {
+      "languague": "Idioma | Idiomas",
+      "level": "Nivel",
+      "spanish": "Español",
+      "native": "Nativo",
+      "english": "Ingles"
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "guitar": "Tocar guitarrar",
+      "bicycle": "Montar bicicleta"
+    },
+    "timeLine": {
+      "title": "Mi línea de tiempo",
+      "seeTimeline": "Ver cronología",
+      "work1": {
+        "date": "Diciembre 2009",
+        "text": "Me gradué del colegio Alberto Lleras Camargo"
+      },
+      "work2": {
+        "date": "Marzo 2010",
+        "text": "Fui a estudiar al SENA: \"Técnico en sistemas\""
+      },
+      "work3": {
+        "date": "April 2011",
+        "text": "Me gradué del SENA como \"Técnico en sistemas\""
+      },
+      "work4": {
+        "date": "Junio 2011",
+        "text": {
+          "info": "Práctica SENA.",
+          "month": "Duración 3 months"
+        }
+      },
+      "work5": {
+        "date": "Junio 2012",
+        "text": "Fui a estudiar al Instituto \"Escala\""
+      },
+      "work6": {
+        "date": "Febrero 2013",
+        "text": "Fui a estudiar a la Universidad Nacional de Colombia en Bogotá: \"Ingeniería de sistemas e computación\"."
+      },
+      "work7": {
+        "date": "Agosto 2016",
+        "text": [
+          "Trabajé como monitor informático para la catedra: \"Jose Celestino Mutis\".",
+          "Duración 5 meses"
+        ]
+      }
+    },
+    "aboutMe": {
+      "title": "Sobre mi",
+      "age": "Tengo {age} años",
+      "occupation": "Actualmente estoy estudiando Ingeniería de sistemas e computación",
+      "download": "Descargar"
+    },
+    "technologies": {
+      "title": "Tecnologías",
+      "levels": [ "Buen nivel", "Nivel intermedio", "Aprendiendo" ]
+    },
+    "education": {
+      "title": "Mi educación",
+      "school": "Colegio",
+      "institute": {
+        "title": "Instituto Técnicoe",
+        "degree": "Titulo",
+        "nameDegree": "Técnica de sistemas"
+      },
+      "university": {
+        "title": "Universidad",
+        "undegree": "Carrera",
+        "nameUndegree": "Ingeniería de sistemas e computación",
+        "progress": "Progreso"
+      }
+    },
+    "experience": {
+      "title": "Mi experiencia",
+      "institute": {
+        "name": "Practica SENA",
+        "position": "Técnica de sistemas",
+        "duration": "Duración",
+        "time": "3 meses"
+      },
+      "university": {
+        "name": "Mi universidad",
+        "position": "Monitor informático",
+        "duration": "Duración",
+        "time": "5 meses"
+      }
+    }
+  },
+  "projects": {
+    "see": "Quiero verlo",
+    "header": {
+      "title": "Mis proyectos"
+    },
+    "game": {
+      "driver": {
+        "title": "Juego \"Conductor Borracho\"",
+        "tags": {
+          "oop": "POO",
+          "ip": "Programación Imperativa"
+        },
+        "description": {
+          "paragraph": [
+            "El juego fue desarrollado para la asignatura \"Programación orientada a objetos \" impartida por el maestro \"Jorge Enrique Amaya Cala \" en la Universidad Nacional de Colombia.",
+            {
+              "introduction": "El juego tiene 4 versiones",
+              "items": [
+                "Version en C: se usa utilizando la programación Imperative. La interfaz se hizo en consola.",
+                "Versión en JavaScript: se usa \"Programación orientada a objetos basado en prototipos\". La interfaz se hizo en consola.",
+                "Version en C ++: se usa \"Programación orientada a objetos \". La interfaz se hizo con la biblioteca SFML",
+                "Versión en Java: se usa \"Programación orientada a objetos \". La interfaz se hizo con la lib JSFML"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "numericalMethods": {
+      "title": "Métodos numéricos",
+      "tags": {
+        "integralCalculus": "Cálculo integral",
+        "diferentialCalculus": "Calculo diferencial",
+        "linearAlgebra": "Álgebra lineal"
+      },
+      "paragraph": [
+        "En este proyecto se incluyen todos los materiales e implementaciones de los principales métodos numéricos propuestos por el profesor Edwin Camilo Cubides de la Universidad Nacional de Colombia.",
+        "El lenguaje de programación utilizado es \"SCILAB \", ya que este se recomienda para las aplicaciones con matemáticas."
+      ]
+    },
+    "translator": {
+      "title": "Traductor del lenguaje de programación \"Clojure \" a \"Python \"",
+      "paragraph": [
+        "Este proyecto fue desarrollado para la asignatura \"lenguajes de programación\" impartida por el docente \"Felipe Restrepo Calle\" en la Universidad Nacional de Colombia.",
+        "El proyecto pretende demostrar que los lenguajes que hacen un uso excesivo de paréntesis son poco prácticos y difíciles de leer. Varios algoritmos se comparan para visualizar la gran diferencia.",
+        "En el futuro, puede servir como una herramienta de migración de código fuente."
+      ]
+    },
+    "dataStructures": {
+      "title": "Implementación de las estructuras de datos y los algoritmos importantes",
+      "tags": {
+        "dataStructure": "Estructura de datos",
+        "graphs": "Gráfos",
+        "order": "Ordenamiento"
+      },
+      "paragraph": [
+        "En este proyecto se encuentran de las estructuras de datos, algoritmos de ordenamiento y de gráfos",
+        "También está todo el material del maestro \"Yoan José Pinzón Ardila\" de la Universidad Nacional de Colombia."
+      ]
+    }
+  },
+  "haveFun": {
+    "header": {
+      "title": "Diviértete",
+      "subtitle": "con el juego \"Code puzzle\""
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "paragraph": [
+        "Debe elegir un número del 1 al 10 y Ir, es decir, la cantidad de dígitos de su número que desea adivinar.",
+        "Después, debe escribir su número y luego hacer clic en el botón \"Enviar\"",
+        "Los números no tendrán ceros a la izquierda, excepto el número cero.",
+        "Solo tiene una serie de intentos que se muestran arriba."
+      ],
+      "digits": {
+        "text": "En la parte inferior, su número aparecerá a la izquierda y para cada número aparecerá con el siguiente significado",
+        "up": "El dígito es más grande",
+        "down": "El dígito es más pequeño",
+        "check": "Este es un dígito"
+      }
+    },
+    "areaGame": {
+      "title": "Code puzzle",
+      "notBegin": "Seleccione la longitud del número",
+      "begin": "Tienes {attempts} intentos",
+      "go": "Ir",
+      "submit": "Enviar",
+      "success": {
+        "title": "¡Tú ganas!",
+        "text": "El número secreto es {secretNumber}"
+      },
+      "errorLost": {
+        "title": "¡Perdiste!",
+        "text": "El número secreto es {secretNumber}"
+      },
+      "errorType": {
+        "title": "Oh no",
+        "text": "Por favor, escribe un número correcto"
+      }
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Contáctame",
+      "subtitle": "¿Tienes preguntas? Tengo respuestas (tal vez)."
+    },
+    "form": {
+      "paragraph": "¿Quieres entrar en contacto conmigo? ¡Complete el siguiente formulario para enviarme un mensaje y trataré de responderle dentro de 24 horas!",
+      "names": "Nombres",
+      "email": "Dirección de correo electrónico",
+      "phone": "Número de teléfono",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "success": {
+        "title": "¡Felicitaciones!",
+        "text": "Correo electrónico enviado con éxito"
+      },
+      "error": {
+        "title": "Error",
+        "text": "Por favor vea los errores y vuelva a intentarlo"
+      }
+    }
+  }
+}

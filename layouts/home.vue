@@ -13,21 +13,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav ml-auto">
             <li class="nav-item" :class="{ 'active' : this.$nuxt.$route.path == '/' }">
-              <nuxt-link to="/" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></nuxt-link>
+              <nuxt-link :to="$i18n.path('')" class="nav-link">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                {{ $t("home.home") }}
+                <span class="sr-only">(current)</span>
+              </nuxt-link>
             </li>
             <li class="nav-item" :class="{ 'active' : this.$nuxt.$route.path == '/projects' }">
-              <nuxt-link to="/projects" class="nav-link">
-                <i class="fa fa-keyboard-o" aria-hidden="true"></i> Projects
+              <nuxt-link :to="$i18n.path('projects')" class="nav-link">
+                <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                {{ $t("home.projects") }}
               </nuxt-link>
             </li>
             <li class="nav-item" :class="{ 'active' : this.$nuxt.$route.path == '/have-fun' }">
-              <nuxt-link to="/have-fun" class="nav-link">
-                <i class="fa fa-gamepad" aria-hidden="true"></i> Have fun
+              <nuxt-link :to="$i18n.path('have-fun')" class="nav-link">
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                {{ $t("home.haveFun") }}
               </nuxt-link>
             </li>
             <li class="nav-item" :class="{ 'active' : this.$nuxt.$route.path == '/contact' }">
-              <nuxt-link to="/contact" class="nav-link">
-                <i class="fa fa-address-book" aria-hidden="true"></i> Contact me
+              <nuxt-link :to="$i18n.path('contact')" class="nav-link">
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+                {{ $t("home.contact") }}
+              </nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link v-if="$i18n.locale === 'es'" :to="`/en` + $route.fullPath" class="btn btn-outline-light" active-class="none" exact>
+                en
+              </nuxt-link>
+              <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" class="btn btn-outline-light" active-class="none" exact>
+                es
               </nuxt-link>
             </li>
           </ul>
@@ -38,13 +53,17 @@
 
     <nuxt/>
 
-    <footer>
-      <section class="net-contact">
+    <footer class="mt-4">
+      <section class="py-5 net-contact">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="text-center">
-                <p class="h1">I <i class="fa fa-heart" aria-hidden="true"></i> new friends!</p>
+                <p
+                  class="h1"
+                  v-html="$t('home.friend', { icon: '<i class=\'fa fa-heart text-danger\' aria-hidden=\'true\'></i>' })">
+                </p>
+
                 <ul class="list-inline">
                   <li class="list-inline-item">
                     <a href="https://github.com/jhont285" target="_blank">
@@ -58,7 +77,7 @@
                   </li>
                   <li class="list-inline-item">
                     <a href="https://www.reddit.com/user/jhont285/" target="_blank">
-                      <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                      <i class="fa fa-reddit fa-4x" aria-hidden="true"></i>
                     </a>
                   </li>
                 </ul>
@@ -66,7 +85,7 @@
 
             </div>
             <div class="col-md-6">
-              <p class="text-center h1">Write me</p>
+              <p class="text-center h1">{{ $t('home.write') }}</p>
               <ul class="fa-ul">
                 <li><i class="fa-li fa fa-map-marker" />Bogotá, Colombia</li>
                 <li><i class="fa-li fa fa-envelope-o" />jhont285@gmail.com</li>
@@ -77,37 +96,18 @@
         </div>
       </section>
 
-      <section class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="mx-auto">
-              <p>Copyright &copy; My Personal WebSite</p>
-            </div>
-          </div>
-        </div>
+      <section class="bg-dark">
+        <p class="text-light text-center py-3 mb-0" v-html="$t('home.copyright')"></p>
       </section>
+
     </footer>
   </div>
 </template>
 
 <style lang="scss" scoped>
 
-.copyright {
-  padding: 1rem;
-  background-color: black;
-  color: white;
-}
-
 .net-contact {
-  margin-top: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin: 0px 0px 0px 0px;
   background-color: orange;
-  color: black;
 }
 
-.fa-heart {
-  color: red;
-}
 </style>

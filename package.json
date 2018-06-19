@@ -1,7 +1,7 @@
 {
   "name": "website-personal",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "project personal website",
   "author": "Jhon Torres",
   "private": true,
   "scripts": {
@@ -10,16 +10,23 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.2",
+    "@nuxtjs/font-awesome": "^1.0.3",
     "bootswatch": "^4.1.1",
     "font-awesome": "^4.7.0",
     "font-mfizz": "^2.4.1",
     "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
     "nuxt": "^1.0.0",
     "popper.js": "^1.14.3",
     "vee-validate": "^2.1.0-beta.2",
+    "vue-i18n": "^8.0.0",
     "vue-sweetalert2": "^1.4.2"
   },
   "devDependencies": {
@@ -32,6 +39,7 @@
     "postcss-hexrgba": "^1.0.1",
     "postcss-nested": "^3.0.0",
     "postcss-responsive-type": "^1.0.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^7.0.3"
   }
 }

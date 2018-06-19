@@ -1,5 +1,12 @@
 const webpack = require('webpack');
 
+const routerBase = {
+  router: {
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/jhon-torres-website/' : '/',
+    middleware: 'i18n'
+  }
+};
+
 module.exports = {
   /*
   ** Headers of the page
@@ -15,19 +22,19 @@ module.exports = {
       }, {
         hid: 'Personal WebSite',
         name: 'Personal WebSite',
-        content: 'Jhon Torres'
-      }
+        content: 'Website of Jhon Emmanuel Torres'
+      },
+      { name: 'keywords', content: 'jhon emmanuel torres, unal, ingenieria de sistemas'}
     ],
     link: [
       {
         rel: 'icon',
-        type: 'image/x-icon',
-        href: '/icon.png'
-      }
+        href: '/jhon-torres-website/icon.png'
+      },
     ]
   },
   css: [
-    'bootswatch/dist/cosmo/bootstrap.min.css', 'font-awesome/css/font-awesome.min.css', 'font-mfizz/dist/font-mfizz.css', '~/css/main.scss'
+    'normalize.css/normalize.css', 'font-mfizz/dist/font-mfizz.css', '~/css/main.scss'
   ],
   render: {
     bundleRenderer: {
@@ -63,7 +70,18 @@ module.exports = {
     plugins: [// set shortcuts as global for bootstrap
       new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery'})]
   },
+  // modules
+  modules: [ '@nuxtjs/component-cache', '@nuxtjs/font-awesome' ],
   // include bootstrap js on startup
-  plugins: ['~plugins/bootstrap.js',  { src: '~plugins/vee-validate.js', ssr: false }, { src: '~plugins/sweetalert.js', ssr: false } ]
-
+  plugins: [
+    { src: '~plugins/bootstrap.js', ssr: false },
+    { src: '~plugins/vee-validate.js', ssr: false },
+    { src: '~plugins/sweetalert.js', ssr: false },
+    { src: '~plugins/ga.js', ssr: false },
+    '~/plugins/i18n.js'
+  ],
+  ...routerBase,
+  generate: {
+    routes: ['/', '/projects', '/have-fun', '/contact',  '/en', '/en/projects', '/en/have-fun', '/en/contact']
+  }
 }
