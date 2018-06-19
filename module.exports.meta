@@ -1,0 +1,9 @@
+module.exports = {
+  modules: [
+    // Simple usage
+    '~/modules/simple'
+
+    // Passing options
+    ['~/modules/simple', { token: '123' }]
+  ]
+}

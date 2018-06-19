@@ -1,0 +1,37 @@
+{
+  "name": "website-personal",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Jhon Torres",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "bootswatch": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "font-mfizz": "^2.4.1",
+    "jquery": "^3.3.1",
+    "nuxt": "^1.0.0",
+    "popper.js": "^1.14.3",
+    "vee-validate": "^2.1.0-beta.2",
+    "vue-sweetalert2": "^1.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.0",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-nested": "^3.0.0",
+    "postcss-responsive-type": "^1.0.0",
+    "sass-loader": "^7.0.3"
+  }
+}
